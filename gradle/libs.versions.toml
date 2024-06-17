@@ -1,0 +1,85 @@
+[versions]
+agp = "8.4.1"
+coilCompose = "2.4.0"
+datastorePreferences = "1.1.1"
+gson = "2.10.1"
+kotlin = "1.9.22"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+kotlinxCoroutinesAndroid = "1.7.3"
+kotlinxCoroutinesCore = "1.7.3"
+kotlinxCoroutinesTest = "1.7.3"
+lifecycleRuntimeKtx = "2.8.1"
+activityCompose = "1.9.0"
+composeBom = "2024.05.00"
+navigationCompose = "2.7.7"
+runtimeLivedata = "1.6.7"
+kotlin-jvm = "1.9.20"
+# Square
+okhttp3 = "4.11.0"
+retrofit2 = "2.9.0"
+
+androidx-hilt = "1.2.0"
+google-hilt = "2.48.1"
+google-ksp = "1.9.20-1.0.14"
+parcelize = "1.7.20"
+google-dagger = "2.49"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-lifecycle-runtime-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycleRuntimeKtx" }
+androidx-runtime-livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "runtimeLivedata" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+# Google Dagger
+google-dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "google-dagger" }
+google-dagger-hilt-android-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "google-dagger" }
+
+
+# Retrofit
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+retrofit2 = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit2" }
+retrofit2-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit2" }
+
+# Okhttp
+okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
+okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
+
+# AndroidX Hilt
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "androidx-hilt" }
+
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = 'agp' }
+androidLibrary = { id = "com.android.library", version.ref = 'agp' }
+androidKotlin = { id = "org.jetbrains.kotlin.android", version.ref = 'kotlin' }
+
+google-hilt = { id = "com.google.dagger.hilt.android", version.ref = "google-hilt" }
+google-ksp = { id = "com.google.devtools.ksp", version.ref = "google-ksp" }
+parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "parcelize" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-jvm" }
+
+[bundles]
+
+retrofit2 = ["retrofit2", 'retrofit2-converter-gson']
+
+
